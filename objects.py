@@ -8,3 +8,8 @@ class Player:
 
     def full_name(self):
         return self.first + '' + self.last
+    
+    def average(self):
+        average = self.hits / self.at_bats
+        average = "{0:.3f}".format(average).ljust(6)
+        return average
