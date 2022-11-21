@@ -13,3 +13,8 @@ class Player:
         average = self.hits / self.at_bats
         average = "{0:.3f}".format(average).ljust(6)
         return average
+    
+class Lineup:
+    def __init__(self):
+        self.__lineup = []
+        
