@@ -5,3 +5,6 @@ class Player:
         self.position = position 
         self.at_bats = at_bats
         self.hits = hits
+
+    def full_name(self):
+        return self.first + '' + self.last
