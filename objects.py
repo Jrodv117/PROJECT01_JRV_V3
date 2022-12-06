@@ -82,7 +82,10 @@ class Lineup:
             print("Edit stats")
 
     def display_lineup(self):
-        print(" Player\t\t\t POS AB H AVG")
+        print(
+            " " * 3
+            + f"{'Player'.ljust(31)}{'POS'.ljust(6)}{'AB'.ljust(6)}{'H'.ljust(6)}{'AVG'.ljust(6)}"
+        )
         print("================================================================")
         for i, player in enumerate(self.__starting_lineup):
             print("{:<3d}".format(i + 1), end="")
