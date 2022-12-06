@@ -7,11 +7,26 @@
 import datetime
 from db import *
 from objects import *
+from datetime import datetime, date
 
 
 class Baseball:
     def __init__(self):
         self.positions_list = ("C", "1B", "2B", "3B", "SS", "LF", "C", "RF", "P")
+
+    def title(self):
+        print("========================================================")
+        print("\t\tBaseball Team Manager\n")
+        today_date = date.today()
+        print("CURRENT DATE :\t", today_date)
+        game_date_str = input("GAME DATE :\t")
+
+        if game_date_str != "" or len(game_date_str) != 0:
+            game_date = datetime.strptime(game_date_str, "%Y-%m-%d")
+            until_game_date = game_date - datetime(
+                today_date.year, today_date.month, today_date.day
+            )
+            print("DAYS UNTIL GAME : ", until_game_date.days)
 
     def menu(self):
         print("\nMENU OPTIONS")
@@ -125,8 +140,7 @@ def main():
 
         player = Player(fname, lname, position, at_bats, hits)
         lineup.add(player)
-    print("================================================================")
-    print("Baseball Team Manager\n")
+    team.title()
     team.menu()
     while True:
         choice = 0
