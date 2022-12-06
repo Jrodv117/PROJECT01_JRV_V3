@@ -1,0 +1,9 @@
+Alberto,Gomez,C,73,20
+Craig,Mitchell,CF,396,125
+Jack,Quinn,RF,345,99
+Simon,Harris,C,450,135
+Darryl,Moss,3B,501,120
+Grady,Guzman,SS,463,114
+Wallace,Cruz,LF,443,131
+Cedric,Cooper,2B,165,54
+Dominick,Gilbert,1B,537,170
